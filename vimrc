@@ -14,6 +14,7 @@ set expandtab
 set smarttab
 set hlsearch
 set guifont=Menlo:h16
+set spell
 "set so=999
 set laststatus=2
 execute pathogen#infect()
@@ -108,6 +109,9 @@ nmap ,f :FufFileWithCurrentBufferDir<CR>
 nmap ,b :FufBuffer<CR>
 nmap ,t :FufTaggedFile<CR>
 
+nmap <C-W>h  <C-W>K 
+nmap <C-W>v <C-W>H
+
 " Enable the list of buffers
 let g:airline#extensions#tabline#enabled = 1
 
@@ -119,7 +123,7 @@ set hidden
 
 " To open a new empty buffer
 " This replaces :tabnew which I used to bind to this mapping
-nmap <leader>T :enew<cr>
+nmap <leader>n :enew<cr>
 
 " Move to the next buffer
 nmap <leader>l :bnext<CR>
@@ -127,9 +131,7 @@ nmap <leader>l :bnext<CR>
 " Move to the previous buffer
 nmap <leader>h :bprevious<CR>
 
-" Close the current buffer and move to the previous one
-" This replicates the idea of closing a tab
-nmap <leader>q :bp <BAR> bd #<CR>
+nmap <leader>q :bd<CR>
 
 " Show all open buffers and their status
 nmap <leader>bl :ls<CR>
