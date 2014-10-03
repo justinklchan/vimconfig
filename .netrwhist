@@ -1,8 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_cnt =7
 let g:netrw_dirhist_1='/Users/chanjustin/Desktop/programming'
 let g:netrw_dirhist_2='/Users/chanjustin/Desktop/vim'
 let g:netrw_dirhist_3='/Users/chanjustin/.vim'
 let g:netrw_dirhist_4='/Users/chanjustin/.vim/bundle/snipMate/snippets'
 let g:netrw_dirhist_5='/Users/chanjustin/Desktop/vim'
 let g:netrw_dirhist_6='/Users/chanjustin/Desktop/algorithmic'
+let g:netrw_dirhist_7='/Users/chanjustin/.vim'
