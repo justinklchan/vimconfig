@@ -149,7 +149,11 @@ if (&t_Co == 256 || &t_Co == 88) && !has('gui_running') &&
   " Use the guicolorscheme plugin to makes 256-color or 88-color
   " terminal use GUI colors rather than cterm colors.
   runtime! plugin/guicolorscheme.vim
+<<<<<<< HEAD
   GuiColorScheme evening
+=======
+  GuiColorScheme solarized 
+>>>>>>> 4d7965cd81a6348a6f5ce4c834e852bbb694afde
 else
   " For 8-color 16-color terminals or for gvim, just use the
   " regular :colorscheme command.
