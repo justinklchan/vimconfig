@@ -137,3 +137,21 @@ nmap <leader>q :bd<CR>
 " Show all open buffers and their status
 nmap <leader>bl :ls<CR>
 
+let g:ConqueTerm_CloseOnEnd = 0
+
+" IMPORTANT: Uncomment one of the following lines to force
+" using 256 colors (or 88 colors) if your terminal supports it,
+" but does not automatically use 256 colors by default.
+set t_Co=256
+"set t_Co=88
+if (&t_Co == 256 || &t_Co == 88) && !has('gui_running') &&
+  \ filereadable(expand("$HOME/.vim/plugin/guicolorscheme.vim"))
+  " Use the guicolorscheme plugin to makes 256-color or 88-color
+  " terminal use GUI colors rather than cterm colors.
+  runtime! plugin/guicolorscheme.vim
+  GuiColorScheme solarized
+else
+  " For 8-color 16-color terminals or for gvim, just use the
+  " regular :colorscheme command.
+  colorscheme solarized
+endif
