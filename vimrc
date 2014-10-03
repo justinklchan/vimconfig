@@ -129,8 +129,9 @@ nmap <leader>n :enew<cr>
 nmap <leader>l :bnext<CR>
 
 " Move to the previous buffer
-nmap <leader>h :bprevious<CR>
+nmap <leader>p :bprevious<CR>
 
+" Close buffer
 nmap <leader>q :bd<CR>
 
 " Show all open buffers and their status
